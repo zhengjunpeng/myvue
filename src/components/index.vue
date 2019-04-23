@@ -1,27 +1,22 @@
 <template>
   <div id="index" class="index">
-    <el-container>
-      <el-header>
-        <Header></Header>
-      </el-header>
-      <el-container>
-      	<el-aside>
-      	  <leftNav></leftNav>
-      	</el-aside>
-      </el-container>
-    </el-container>
+    <Header></Header>
+    <leftNav></leftNav>
+    <Main></Main>
   </div>
 </template>
 
 <script>
 import Header from './pages/header'
 import leftNav from './pages/leftNav'
+import Main from './pages/main'
 
 export default {
   name: 'index',
   components: {
     Header,
-    leftNav
+    leftNav,
+    Main
   }
 }
 
